@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ss2sa.cakescalculator.MainActivity">
+
+    <!-- This is row 1 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/my_text_size"
+        android:background="@color/greyBackground"
+        />
+
+    <!-- This is row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button AC -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button +/- -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+/-"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button % -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button // -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <!-- This is row 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button 7 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button 8 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button 9 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button X -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <!-- This is row 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Button 4 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button 5 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button 6 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button - -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+</LinearLayout>
