@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ss2sa.cakescalculator.MainActivity">
+    tools:context="com.example.ss2sa.cakescalculator.MainActivity"
+    >
 
     <!-- This is row 1 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="@string/zero"
         android:textSize="@dimen/my_text_size"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
         android:background="@color/greyBackground"
+        android:id="@+id/result_text"
         />
 
     <!-- This is row 2 -->
@@ -27,7 +31,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AC"
+            android:text="@string/all_clear"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -38,7 +42,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+/-"
+            android:text="@string/plus_minus"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -48,7 +52,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="%"
+            android:text="@string/percent_sign"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -58,7 +62,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="//"
+            android:text="@string/division_sign"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -77,27 +81,29 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7"
+            android:text="@string/seven"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonSevenPressed"
             />
 
         <!-- Button 8 -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="8"
+            android:text="@string/eight"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonEightPressed"
             />
 
         <!-- Button 9 -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="9"
+            android:text="@string/nine"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -107,7 +113,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X"
+            android:text="@string/multiplication_sign"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -118,13 +124,14 @@
     <!-- This is row 4 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <!-- Button 4 -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4"
+            android:text="@string/four"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -134,7 +141,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
+            android:text="@string/five"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -144,7 +151,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6"
+            android:text="@string/six"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
@@ -154,7 +161,98 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"
+            android:text="@string/minus_sign"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <!-- This is row 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button 1 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button 2 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button 3 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/three"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button + -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_sign"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <!-- This is row 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button 0 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="13"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:paddingLeft="35sp"
+            />
+
+        <!-- Button . -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decimal"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            />
+
+        <!-- Button = -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equals_sign"
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
