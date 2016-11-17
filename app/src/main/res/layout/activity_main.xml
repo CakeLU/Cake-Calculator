@@ -107,6 +107,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonNinePressed"
             />
 
         <!-- Button X -->
@@ -135,6 +136,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonFourPressed"
             />
 
         <!-- Button 5 -->
@@ -145,6 +147,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonFivePressed"
             />
 
         <!-- Button 6 -->
@@ -155,6 +158,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonSixPressed"
             />
 
         <!-- Button - -->
@@ -184,6 +188,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonOnePressed"
             />
 
         <!-- Button 2 -->
@@ -194,6 +199,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonTwoPressed"
             />
 
         <!-- Button 3 -->
@@ -204,6 +210,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonThreePressed"
             />
 
         <!-- Button + -->
@@ -214,6 +221,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonPlusPressed"
             />
 
     </LinearLayout>
@@ -236,6 +244,7 @@
             android:textAlignment="textStart"
             android:layout_gravity="start"
             android:paddingLeft="35sp"
+            android:onClick="buttonZeroPressed"
             />
 
         <!-- Button . -->
