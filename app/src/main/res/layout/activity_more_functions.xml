@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ss2sa.cakescalculator.MainActivity"
+
+    >
+
+    <!-- This is row 1 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="@dimen/my_text_size"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:background="@color/greyBackground"
+        android:id="@+id/result_text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button Square Root -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/square_root"
+            android:textSize="@dimen/my_text_size"
+            android:layout_weight="1"
+            android:background="@color/greyBackground"
+            android:onClick="buttonSquareRootPressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button tanh -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hyperbolic_tangent"
+            android:textSize="@dimen/my_text_size"
+            android:layout_weight="1"
+            android:background="@color/greyBackground"
+            android:onClick="buttonHyperbolicTangentPressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button Sine -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sine"
+            android:textSize="@dimen/my_text_size"
+            android:layout_weight="1"
+            android:background="@color/greyBackground"
+            android:onClick="buttonSinePressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button Cosine -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cosine"
+            android:textSize="@dimen/my_text_size"
+            android:layout_weight="1"
+            android:background="@color/greyBackground"
+            android:onClick="buttonCosinePressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/more_functions"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonMoreFunctionsPressed2"
+            />
+
+    </LinearLayout>
+</LinearLayout>

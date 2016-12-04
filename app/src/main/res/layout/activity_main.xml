@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.ss2sa.cakescalculator.MainActivity"
+
     >
 
     <!-- This is row 1 -->
@@ -35,6 +36,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonACPressed"
             />
 
         <!-- Button +/- -->
@@ -46,6 +48,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonPlusMinusPressed"
             />
 
         <!-- Button % -->
@@ -56,6 +59,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonModuloPressed"
             />
 
         <!-- Button // -->
@@ -66,6 +70,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonDivisionPressed"
             />
 
     </LinearLayout>
@@ -118,6 +123,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonTimesPressed"
             />
 
     </LinearLayout>
@@ -169,6 +175,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonMinusPressed"
             />
 
     </LinearLayout>
@@ -255,6 +262,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonDecimalPressed"
             />
 
         <!-- Button = -->
@@ -265,6 +273,25 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonEqualsPressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/more_functions"
+            android:textSize="@dimen/my_text_size"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonMoreFunctionsPressed"
             />
 
     </LinearLayout>

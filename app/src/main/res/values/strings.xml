@@ -19,4 +19,9 @@
     <string name="plus_minus">+/-</string>
     <string name="all_clear">AC</string>
     <string name="decimal">.</string>
+    <string name="square_root">Square Root</string>
+    <string name="hyperbolic_tangent">tanh</string>
+    <string name="sine">sin</string>
+    <string name="cosine">cos</string>
+    <string name="more_functions">More Functions</string>
 </resources>
