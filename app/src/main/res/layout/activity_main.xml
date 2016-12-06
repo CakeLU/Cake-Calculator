@@ -284,14 +284,48 @@
         android:orientation="horizontal"
         >
 
+        <!-- Square Root -->
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/more_functions"
-            android:textSize="@dimen/my_text_size"
+            android:text="@string/square_root"
+            android:textSize="@dimen/special_functions"
             android:background="@color/greyBackground"
             android:layout_weight="1"
-            android:onClick="buttonMoreFunctionsPressed"
+            android:onClick="buttonSquareRootPressed"
+            />
+
+        <!-- Hyperbolic Tangent (degrees) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hyperbolic_tangent"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonHyperbolicTangentPressed"
+            />
+
+        <!-- Sine (degrees) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sine"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonSinePressed"
+            />
+
+        <!-- Cosine (degrees) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cosine"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonCosinePressed"
             />
 
     </LinearLayout>
