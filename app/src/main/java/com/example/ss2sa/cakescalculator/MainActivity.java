@@ -241,7 +241,32 @@ public class MainActivity extends AppCompatActivity {
     // This function changes a postitive number to a negative number and vice versa
     public void buttonPlusMinusPressed(View view) {
         TextView result = (TextView) findViewById(R.id.result_text);
-        result.setText(String.valueOf(Double.parseDouble(getDisplayString())));
+
+        String tmp = getDisplayString();
+
+        if (getDisplayString().equals("0") || getDisplayString().equals("0.0")) {
+            showAlert(view, "Zero can't be negative!");
+        }
+
+        boolean isFloat = false;
+
+        for (int i = 0; i < getDisplayString().length(); i++) {
+            if (getDisplayString().charAt(i) == '.') {
+                isFloat = true;
+                break;
+            }
+            else {
+                isFloat = false;
+            }
+        }
+
+        if (isFloat) {
+            result.setText(String.valueOf(-1 * Double.parseDouble(tmp)));
+        }
+
+        else {
+            result.setText(String.valueOf(-1 * Integer.parseInt(tmp)));
+        }
 
     }
 
@@ -270,8 +295,14 @@ public class MainActivity extends AppCompatActivity {
 
         TextView result = (TextView) findViewById(R.id.result_text);
 
-        String tmp = String.valueOf(Math.sqrt(Double.parseDouble(getDisplayString())));
-        result.setText(intOrFloat(tmp));
+        if (Integer.parseInt(getDisplayString()) < 0) {
+            showAlert(view, "You can't take the square root of a negative number!");
+        }
+
+        else {
+            String tmp = String.valueOf(Math.sqrt(Double.parseDouble(getDisplayString())));
+            result.setText(intOrFloat(tmp));
+        }
 
     }
 
