@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.ss2sa.cakescalculator.MainActivity"
+
     >
 
     <!-- This is row 1 -->
@@ -35,6 +36,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonACPressed"
             />
 
         <!-- Button +/- -->
@@ -46,6 +48,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonPlusMinusPressed"
             />
 
         <!-- Button % -->
@@ -56,6 +59,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonModuloPressed"
             />
 
         <!-- Button // -->
@@ -66,6 +70,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonDivisionPressed"
             />
 
     </LinearLayout>
@@ -107,6 +112,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonNinePressed"
             />
 
         <!-- Button X -->
@@ -117,6 +123,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonTimesPressed"
             />
 
     </LinearLayout>
@@ -135,6 +142,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonFourPressed"
             />
 
         <!-- Button 5 -->
@@ -145,6 +153,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonFivePressed"
             />
 
         <!-- Button 6 -->
@@ -155,6 +164,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonSixPressed"
             />
 
         <!-- Button - -->
@@ -165,6 +175,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonMinusPressed"
             />
 
     </LinearLayout>
@@ -184,6 +195,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonOnePressed"
             />
 
         <!-- Button 2 -->
@@ -194,6 +206,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonTwoPressed"
             />
 
         <!-- Button 3 -->
@@ -204,6 +217,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonThreePressed"
             />
 
         <!-- Button + -->
@@ -214,6 +228,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonPlusPressed"
             />
 
     </LinearLayout>
@@ -236,6 +251,7 @@
             android:textAlignment="textStart"
             android:layout_gravity="start"
             android:paddingLeft="35sp"
+            android:onClick="buttonZeroPressed"
             />
 
         <!-- Button . -->
@@ -246,6 +262,7 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonDecimalPressed"
             />
 
         <!-- Button = -->
@@ -256,6 +273,59 @@
             android:textSize="@dimen/my_text_size"
             android:background="@color/greyBackground"
             android:layout_weight="1"
+            android:onClick="buttonEqualsPressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <!-- Square Root -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/square_root"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonSquareRootPressed"
+            />
+
+        <!-- Hyperbolic Tangent (degrees) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hyperbolic_tangent"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonHyperbolicTangentPressed"
+            />
+
+        <!-- Sine (degrees) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sine"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonSinePressed"
+            />
+
+        <!-- Cosine (degrees) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cosine"
+            android:textSize="@dimen/special_functions"
+            android:background="@color/greyBackground"
+            android:layout_weight="1"
+            android:onClick="buttonCosinePressed"
             />
 
     </LinearLayout>
